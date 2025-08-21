@@ -232,7 +232,7 @@ Error generating stack: `+e.message+`
   display: block;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
-`;function sm(){return U.jsxs(U.Fragment,{children:[U.jsx(um,{}),U.jsxs(nm,{children:[U.jsxs(im,{children:[U.jsx(cm,{children:U.jsx(rm,{src:"/images/logo.avif"})}),U.jsx(fm,{})]}),U.jsx(am,{})]})]})}const om=J.div`
+`;function sm(){return U.jsxs(U.Fragment,{children:[U.jsx(um,{}),U.jsxs(nm,{children:[U.jsxs(im,{children:[U.jsx(cm,{children:U.jsx(rm,{src:"public/logo.avif"})}),U.jsx(fm,{})]}),U.jsx(am,{})]})]})}const om=J.div`
   width: 1200px;
   height: 300px;
   overflow: hidden;
@@ -248,46 +248,16 @@ Error generating stack: `+e.message+`
   opacity: ${i=>i.$active?1:0};
   transition: opacity 0.5s ease;
   padding: 2px;
-`,j0=["/images/style1.avif","/images/style2.avif","/images/style3.avif"];function hm(){const[i,r]=Pe.useState(0);return Pe.useEffect(()=>{const o=setInterval(()=>{r(s=>(s+1)%j0.length)},2500);return()=>clearInterval(o)},[]),U.jsx(om,{children:j0.map((o,s)=>U.jsx(dm,{$active:i===s,children:U.jsx("img",{src:o,alt:`slide-${s}`,style:{width:"100%",height:"100%",objectFit:"cover"}})},s))})}const vm=J.div`
-    margin: 0 auto;
-`,ym=J.div`
-    width: 1200px;
-    height: 500px;
-    margin: 0 auto;
-    display: grid;
-    border-top: 0px;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: 300px 200px;
-    grid-gap: 0;
-    grid-template-areas: 
-    "mBox1 mBox1 mBox1"
-    "mBox2 mBox3 mBox4";
-`,mm=J.div`
-    grid-area: mBox1;
-    text-align: center;
-    border-radius: 10px;
-`,gm=J.div`
+`,j0=["public/style1.avif","public/style2.avif","public/style3.avif"];function hm(){const[i,r]=Pe.useState(0);return Pe.useEffect(()=>{const o=setInterval(()=>{r(s=>(s+1)%j0.length)},2500);return()=>clearInterval(o)},[]),U.jsx(om,{children:j0.map((o,s)=>U.jsx(dm,{$active:i===s,children:U.jsx("img",{src:o,alt:`slide-${s}`,style:{width:"100%",height:"100%",objectFit:"cover"}})},s))})}const vm=J.div`
     position: relative;
     grid-area: mBox2;
     text-align: center;
-`,pm=J.div`
-    grid-area: mBox3;
-    text-align: center;
-`,Sm=J.div`
-    grid-area: mBox4;
-    text-align: center;
-`,bm=J.h3`
-    margin: 0;
-    line-height: 200px;
-`,Em=J.h3`
-    margin: 0;
-    line-height: 200px;
-`,Tm=J.div`
+`,ym=J.div`
     position: absolute;
     left: 0;
     width: 400px;
     height: 200px;
-`,Am=J.div`
+`,mm=J.div`
     padding: 2px;
     display: grid;
     width: 400px;
@@ -295,21 +265,21 @@ Error generating stack: `+e.message+`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px;
     gap: 2px;
-`,xm=J.div`
+`,gm=J.div`
     padding: 2px;
     border-radius: 10px;
     color: white;
     line-height: 50px;
     text-align: center;
     background-color: ${i=>i.selected?"#1a237e":"#263238"};
-`,zm=J.div`
+`,pm=J.div`
     padding: 2px;
     border-radius: 10px;
     color: white;
     line-height: 50px;
     text-align: center;
     background-color: ${i=>i.selected?"#263238":"#1a237e"};
-`,_m=J.div`
+`,Sm=J.div`
     z-index: 5;
     position: absolute;
     left: 0;
@@ -321,7 +291,7 @@ Error generating stack: `+e.message+`
     border-radius: 10px;
     opacity: ${i=>i.$show?1:0};
     pointer-events: ${i=>i.$show?"auto":"none"};
-`,Om=J.div`
+`,bm=J.div`
     position: absolute;
     left: 0;
     width: 400px;
@@ -332,14 +302,14 @@ Error generating stack: `+e.message+`
     align-items: center;
     opacity: ${i=>i.$show?1:0};
     pointer-events: ${i=>i.$show?"auto":"none"};
-`,Mm=J.ul`
+`,Em=J.ul`
     padding: 0 20px;
     margin: 0;
 `,mi=J.li`
     list-style: none;
     margin-bottom: 8px;
     padding: 0;
-`,Dm=J.img`
+`,Tm=J.img`
   padding: 2px;
   width: 400px;
   height: 150px;
@@ -347,7 +317,43 @@ Error generating stack: `+e.message+`
   display: block;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
-`;function Rm(){const[i,r]=Pe.useState(!1);return U.jsx(U.Fragment,{children:U.jsx(vm,{children:U.jsxs(ym,{children:[U.jsx(mm,{children:U.jsx(hm,{})}),U.jsx(gm,{children:U.jsxs(Tm,{children:[U.jsxs(Am,{children:[U.jsx(xm,{selected:i,onClick:()=>r(!0),children:"공지사항"}),U.jsx(zm,{selected:i,onClick:()=>r(!1),children:"갤러리"})]}),U.jsx(_m,{$show:i,children:U.jsxs(Mm,{children:[U.jsx(mi,{children:"개인정보처리방침 개정 내용 사전 안내"}),U.jsx(mi,{children:"패션톡 서비스 일시 중단 안내"}),U.jsx(mi,{children:"택배 없는 날 및 공휴일로 인한 배송 지연 안내"}),U.jsx(mi,{children:"체험단 신청 대상 회원 등급 변경 안내"})]})}),U.jsx(Om,{$show:!i,children:U.jsx(Dm,{src:"/images/style4.avif"})})]})}),U.jsx(pm,{children:U.jsx(bm,{children:"배너(C.3)"})}),U.jsx(Sm,{children:U.jsx(Em,{children:"바로가기(C.4)"})})]})})})}const Um=J.div`
+`;function Am(){const[i,r]=Pe.useState(!1);return U.jsx(U.Fragment,{children:U.jsx(vm,{children:U.jsxs(ym,{children:[U.jsxs(mm,{children:[U.jsx(gm,{selected:i,onClick:()=>r(!0),children:"공지사항"}),U.jsx(pm,{selected:i,onClick:()=>r(!1),children:"갤러리"})]}),U.jsx(Sm,{$show:i,children:U.jsxs(Em,{children:[U.jsx(mi,{children:"개인정보처리방침 개정 내용 사전 안내"}),U.jsx(mi,{children:"패션톡 서비스 일시 중단 안내"}),U.jsx(mi,{children:"택배 없는 날 및 공휴일로 인한 배송 지연 안내"}),U.jsx(mi,{children:"체험단 신청 대상 회원 등급 변경 안내"})]})}),U.jsx(bm,{$show:!i,children:U.jsx(Tm,{src:"public/style4.avif"})})]})})})}const xm=J.div`
+    margin: 0 auto;
+`,zm=J.div`
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    border-top: 0px;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 300px 200px;
+    grid-gap: 0;
+    grid-template-areas: 
+    "mBox1 mBox1 mBox1"
+    "mBox2 mBox3 mBox4";
+`,_m=J.div`
+    position: relative;
+    z-index: 3;
+    grid-area: mBox1;
+    text-align: center;
+    border-radius: 10px;
+`,Om=J.div`
+    grid-area: mBox3;
+    text-align: center;
+`,Mm=J.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    text-decoration: none;
+    grid-area: mBox4;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+`,Dm=J.h3`
+    margin: 0;
+    line-height: 200px;
+`;function Rm(){return U.jsx(U.Fragment,{children:U.jsx(xm,{children:U.jsxs(zm,{children:[U.jsx(_m,{children:U.jsx(hm,{})}),U.jsx(Am,{}),U.jsx(Om,{children:"?????"}),U.jsx(Mm,{children:U.jsx(Dm,{children:U.jsx("a",{href:"https://developer.mozilla.org/ko/",children:"MDN을 참고하세요."})})})]})})})}const Um=J.div`
     margin: 0 auto;
 `,Nm=J.div`
     width: 1200px;
