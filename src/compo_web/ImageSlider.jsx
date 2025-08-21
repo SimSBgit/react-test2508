@@ -22,9 +22,9 @@ const Slide = styled.div`
 `;
 
 const images = [
-  './images/style1.avif',
-  './images/style2.avif',
-  './images/style3.avif',
+  'public/style1.avif',
+  'public/style2.avif',
+  'public/style3.avif',
 ];
 
 export default function ImageSlider() {

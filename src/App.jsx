@@ -5,26 +5,25 @@ import Footer from "./compo_web/Footer";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    margin: 0 auto;
     display: flex;
     justify-content: center;
   }
-`
-
-const BodyWrapper = styled.div`
-  margin: 0 auto;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
 `
 
 function App() {
 
   return (
     <>
-      <GlobalStyle />
-      <BodyWrapper>
+        <GlobalStyle />
         <Header />
         <MainContent />
         <Footer />
-      </BodyWrapper>
     </>
   )
 }
