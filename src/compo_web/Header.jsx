@@ -35,7 +35,6 @@ const FlexBox2 = styled.div`
     line-height: 100px;
 `
 
-
 const Image1 = styled.img`
   padding: 2px;
   width: 150px;

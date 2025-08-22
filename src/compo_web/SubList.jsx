@@ -23,8 +23,8 @@ const List = styled.div`
     &::after {
         content: "";
         position: absolute;
-        left: 0;
-        width: 100%;
+        left: 10%;
+        width: 80%;
         bottom: 0;
         height: 1px;
         background-color: #eee;
