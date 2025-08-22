@@ -68,8 +68,8 @@ Error generating stack: `+e.message+`
     &::after {
         content: "";
         position: absolute;
-        left: 0;
-        width: 100%;
+        left: 10%;
+        width: 80%;
         bottom: 0;
         height: 1px;
         background-color: #eee;
@@ -390,6 +390,6 @@ Error generating stack: `+e.message+`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    /* outline: 1px solid red; */
   }
 `;function Qm(){return U.jsxs(U.Fragment,{children:[U.jsx(Xm,{}),U.jsx(sm,{}),U.jsx(Rm,{}),U.jsx(Gm,{})]})}Xv.createRoot(document.getElementById("root")).render(U.jsx(Pe.StrictMode,{children:U.jsx(Qm,{})}));
