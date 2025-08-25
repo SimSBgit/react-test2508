@@ -201,30 +201,30 @@ Error generating stack: `+e.message+`
     margin: 0;
     line-height: 50px;
     text-align: center;
-`;function am(){return U.jsx(U.Fragment,{children:U.jsxs(Zy,{children:[U.jsxs(Vy,{children:[U.jsx(Ky,{children:U.jsx(Py,{children:"MENU-1"})}),U.jsx(wy,{children:U.jsx(tm,{children:"MENU-2"})}),U.jsx(Jy,{children:U.jsx(lm,{children:"MENU-3"})}),U.jsx($y,{children:U.jsx(em,{children:"MENU-4"})})]}),U.jsxs(Ly,{children:[U.jsx(ky,{children:U.jsx(yi,{name1:"블라우스",name2:"티",name3:"셔츠",name4:"니트"})}),U.jsx(Wy,{children:U.jsx(yi,{name1:"자켓",name2:"코트",name3:"가디건",name4:"머플러"})}),U.jsx(Fy,{children:U.jsx(yi,{name1:"청바지",name2:"짧은바지",name3:"긴바지",name4:"레깅스"})}),U.jsx(Iy,{children:U.jsx(yi,{name1:"귀고리",name2:"목걸이",name3:"반지",name4:"팔찌"})})]})]})})}const um=ch`
+`;function am(){return U.jsx(U.Fragment,{children:U.jsxs(Zy,{children:[U.jsxs(Vy,{children:[U.jsx(Ky,{children:U.jsx(Py,{children:"MENU-1"})}),U.jsx(wy,{children:U.jsx(tm,{children:"MENU-2"})}),U.jsx(Jy,{children:U.jsx(lm,{children:"MENU-3"})}),U.jsx($y,{children:U.jsx(em,{children:"MENU-4"})})]}),U.jsxs(Ly,{children:[U.jsx(ky,{children:U.jsx(yi,{name1:"블라우스",name2:"티",name3:"셔츠",name4:"니트"})}),U.jsx(Wy,{children:U.jsx(yi,{name1:"자켓",name2:"코트",name3:"가디건",name4:"머플러"})}),U.jsx(Fy,{children:U.jsx(yi,{name1:"청바지",name2:"짧은바지",name3:"긴바지",name4:"레깅스"})}),U.jsx(Iy,{children:U.jsx(yi,{name1:"귀고리",name2:"목걸이",name3:"반지",name4:"팔찌"})})]})]})})}const um="/react-test2508/assets/logo-iOfPW2en.avif",nm=ch`
     li {
         list-style: none;
     }
    
    * {box-sizing: border-box;
    }
-    `,nm=J.div`
+    `,im=J.div`
     position: relative;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-`,im=J.div`
+`,cm=J.div`
     margin: 0 auto;
     display: grid;
     width: 1200px;
     height: 100px;
     grid-template-columns: 150px 1050px;
     grid-template-rows: 100px;
-`,cm=J.div`
-    line-height: 100px;
 `,fm=J.div`
     line-height: 100px;
-`,rm=J.img`
+`,rm=J.div`
+    line-height: 100px;
+`,sm=J.img`
   padding: 2px;
   width: 150px;
   height: 100px;
@@ -232,14 +232,14 @@ Error generating stack: `+e.message+`
   display: block;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
-`;function sm(){return U.jsxs(U.Fragment,{children:[U.jsx(um,{}),U.jsxs(nm,{children:[U.jsxs(im,{children:[U.jsx(cm,{children:U.jsx(rm,{src:"public/logo.avif"})}),U.jsx(fm,{})]}),U.jsx(am,{})]})]})}const om=J.div`
+`;function om(){return U.jsxs(U.Fragment,{children:[U.jsx(nm,{}),U.jsxs(im,{children:[U.jsxs(cm,{children:[U.jsx(fm,{children:U.jsx(sm,{src:um})}),U.jsx(rm,{})]}),U.jsx(am,{})]})]})}const dm="/react-test2508/assets/style1-DOE3NUmn.avif",hm="/react-test2508/assets/style2-BquApEZu.avif",vm="/react-test2508/assets/style3-Gnj_icQk.avif",ym=J.div`
   width: 1200px;
   height: 300px;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
   border-radius: 10px;
-`,dm=J.div`
+`,mm=J.div`
   width: 100%;
   height: 100%;
   position: absolute;
@@ -248,16 +248,16 @@ Error generating stack: `+e.message+`
   opacity: ${i=>i.$active?1:0};
   transition: opacity 0.5s ease;
   padding: 2px;
-`,j0=["public/style1.avif","public/style2.avif","public/style3.avif"];function hm(){const[i,r]=Pe.useState(0);return Pe.useEffect(()=>{const o=setInterval(()=>{r(s=>(s+1)%j0.length)},2500);return()=>clearInterval(o)},[]),U.jsx(om,{children:j0.map((o,s)=>U.jsx(dm,{$active:i===s,children:U.jsx("img",{src:o,alt:`slide-${s}`,style:{width:"100%",height:"100%",objectFit:"cover"}})},s))})}const vm=J.div`
+`,j0=[dm,hm,vm];function gm(){const[i,r]=Pe.useState(0);return Pe.useEffect(()=>{const o=setInterval(()=>{r(s=>(s+1)%j0.length)},2500);return()=>clearInterval(o)},[]),U.jsx(ym,{children:j0.map((o,s)=>U.jsx(mm,{$active:i===s,children:U.jsx("img",{src:o,alt:`slide-${s}`,style:{width:"100%",height:"100%",objectFit:"cover"}})},s))})}const pm="/react-test2508/assets/style4-Bcp7QTy1.avif",Sm=J.div`
     position: relative;
     grid-area: mBox2;
     text-align: center;
-`,ym=J.div`
+`,bm=J.div`
     position: absolute;
     left: 0;
     width: 400px;
     height: 200px;
-`,mm=J.div`
+`,Em=J.div`
     padding: 2px;
     display: grid;
     width: 400px;
@@ -265,21 +265,21 @@ Error generating stack: `+e.message+`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 50px;
     gap: 2px;
-`,gm=J.div`
+`,Tm=J.div`
     padding: 2px;
     border-radius: 10px;
     color: white;
     line-height: 50px;
     text-align: center;
     background-color: ${i=>i.selected?"#1a237e":"#263238"};
-`,pm=J.div`
+`,Am=J.div`
     padding: 2px;
     border-radius: 10px;
     color: white;
     line-height: 50px;
     text-align: center;
     background-color: ${i=>i.selected?"#263238":"#1a237e"};
-`,Sm=J.div`
+`,xm=J.div`
     z-index: 5;
     position: absolute;
     left: 0;
@@ -291,7 +291,7 @@ Error generating stack: `+e.message+`
     border-radius: 10px;
     opacity: ${i=>i.$show?1:0};
     pointer-events: ${i=>i.$show?"auto":"none"};
-`,bm=J.div`
+`,zm=J.div`
     position: absolute;
     left: 0;
     width: 400px;
@@ -302,14 +302,14 @@ Error generating stack: `+e.message+`
     align-items: center;
     opacity: ${i=>i.$show?1:0};
     pointer-events: ${i=>i.$show?"auto":"none"};
-`,Em=J.ul`
+`,_m=J.ul`
     padding: 0 20px;
     margin: 0;
 `,mi=J.li`
     list-style: none;
     margin-bottom: 8px;
     padding: 0;
-`,Tm=J.img`
+`,Om=J.img`
   padding: 2px;
   width: 400px;
   height: 150px;
@@ -317,9 +317,9 @@ Error generating stack: `+e.message+`
   display: block;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
-`;function Am(){const[i,r]=Pe.useState(!1);return U.jsx(U.Fragment,{children:U.jsx(vm,{children:U.jsxs(ym,{children:[U.jsxs(mm,{children:[U.jsx(gm,{selected:i,onClick:()=>r(!0),children:"공지사항"}),U.jsx(pm,{selected:i,onClick:()=>r(!1),children:"갤러리"})]}),U.jsx(Sm,{$show:i,children:U.jsxs(Em,{children:[U.jsx(mi,{children:"개인정보처리방침 개정 내용 사전 안내"}),U.jsx(mi,{children:"패션톡 서비스 일시 중단 안내"}),U.jsx(mi,{children:"택배 없는 날 및 공휴일로 인한 배송 지연 안내"}),U.jsx(mi,{children:"체험단 신청 대상 회원 등급 변경 안내"})]})}),U.jsx(bm,{$show:!i,children:U.jsx(Tm,{src:"public/style4.avif"})})]})})})}const xm=J.div`
+`;function Mm(){const[i,r]=Pe.useState(!1);return U.jsx(U.Fragment,{children:U.jsx(Sm,{children:U.jsxs(bm,{children:[U.jsxs(Em,{children:[U.jsx(Tm,{selected:i,onClick:()=>r(!0),children:"공지사항"}),U.jsx(Am,{selected:i,onClick:()=>r(!1),children:"갤러리"})]}),U.jsx(xm,{$show:i,children:U.jsxs(_m,{children:[U.jsx(mi,{children:"개인정보처리방침 개정 내용 사전 안내"}),U.jsx(mi,{children:"패션톡 서비스 일시 중단 안내"}),U.jsx(mi,{children:"택배 없는 날 및 공휴일로 인한 배송 지연 안내"}),U.jsx(mi,{children:"체험단 신청 대상 회원 등급 변경 안내"})]})}),U.jsx(zm,{$show:!i,children:U.jsx(Om,{src:pm})})]})})})}const Dm=J.div`
     margin: 0 auto;
-`,zm=J.div`
+`,Rm=J.div`
     width: 1200px;
     height: 500px;
     margin: 0 auto;
@@ -331,16 +331,16 @@ Error generating stack: `+e.message+`
     grid-template-areas: 
     "mBox1 mBox1 mBox1"
     "mBox2 mBox3 mBox4";
-`,_m=J.div`
+`,Um=J.div`
     position: relative;
     z-index: 3;
     grid-area: mBox1;
     text-align: center;
     border-radius: 10px;
-`,Om=J.div`
+`,Nm=J.div`
     grid-area: mBox3;
     text-align: center;
-`,Mm=J.div`
+`,Hm=J.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,12 +350,12 @@ Error generating stack: `+e.message+`
     text-align: center;
     border-radius: 10px;
     padding: 10px;
-`,Dm=J.h3`
+`,jm=J.h3`
     margin: 0;
     line-height: 200px;
-`;function Rm(){return U.jsx(U.Fragment,{children:U.jsx(xm,{children:U.jsxs(zm,{children:[U.jsx(_m,{children:U.jsx(hm,{})}),U.jsx(Am,{}),U.jsx(Om,{children:"?????"}),U.jsx(Mm,{children:U.jsx(Dm,{children:U.jsx("a",{href:"https://developer.mozilla.org/ko/",children:"MDN을 참고하세요."})})})]})})})}const Um=J.div`
+`;function Bm(){return U.jsx(U.Fragment,{children:U.jsx(Dm,{children:U.jsxs(Rm,{children:[U.jsx(Um,{children:U.jsx(gm,{})}),U.jsx(Mm,{}),U.jsx(Nm,{children:"?????"}),U.jsx(Hm,{children:U.jsx(jm,{children:U.jsx("a",{href:"https://developer.mozilla.org/ko/",children:"MDN을 참고하세요."})})})]})})})}const qm=J.div`
     margin: 0 auto;
-`,Nm=J.div`
+`,Cm=J.div`
     width: 1200px;
     height: 100px;
     margin: 0 auto;
@@ -364,24 +364,24 @@ Error generating stack: `+e.message+`
     grid-template-columns: 150px 900px 150px;
     grid-template-rows: 100px;
     grid-gap: 0;
-`,Hm=J.div`
+`,Ym=J.div`
     border-right: 2px dotted black;
     text-align: center;
-`,jm=J.div`
+`,Gm=J.div`
     border-right: 2px dotted black;
     text-align: center;
-`,Bm=J.div`
+`,Xm=J.div`
     text-align: center;
-`,qm=J.h3`
+`,Qm=J.h3`
     margin: 0;
     line-height: 100px;
-`,Cm=J.h3`
+`,Zm=J.h3`
     margin: 0;
     line-height: 100px;
-`,Ym=J.h3`
+`,Vm=J.h3`
     margin: 0;
     line-height: 100px;
-`;function Gm(){return U.jsx(U.Fragment,{children:U.jsx(Um,{children:U.jsxs(Nm,{children:[U.jsx(Hm,{children:U.jsx(qm,{children:"로고"})}),U.jsx(jm,{children:U.jsx(Cm,{children:"Copyright"})}),U.jsx(Bm,{children:U.jsx(Ym,{children:"SNS"})})]})})})}const Xm=ch`
+`;function Lm(){return U.jsx(U.Fragment,{children:U.jsx(qm,{children:U.jsxs(Cm,{children:[U.jsx(Ym,{children:U.jsx(Qm,{children:"로고"})}),U.jsx(Gm,{children:U.jsx(Zm,{children:"Copyright"})}),U.jsx(Xm,{children:U.jsx(Vm,{children:"SNS"})})]})})})}const Km=ch`
   body {
     display: flex;
     justify-content: center;
@@ -392,4 +392,4 @@ Error generating stack: `+e.message+`
     box-sizing: border-box;
     /* outline: 1px solid red; */
   }
-`;function Qm(){return U.jsxs(U.Fragment,{children:[U.jsx(Xm,{}),U.jsx(sm,{}),U.jsx(Rm,{}),U.jsx(Gm,{})]})}Xv.createRoot(document.getElementById("root")).render(U.jsx(Pe.StrictMode,{children:U.jsx(Qm,{})}));
+`;function wm(){return U.jsxs(U.Fragment,{children:[U.jsx(Km,{}),U.jsx(om,{}),U.jsx(Bm,{}),U.jsx(Lm,{})]})}Xv.createRoot(document.getElementById("root")).render(U.jsx(Pe.StrictMode,{children:U.jsx(wm,{})}));
